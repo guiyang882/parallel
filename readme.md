@@ -27,7 +27,7 @@ During SRClassify 188377 ms !
 
 ### 在Mac中使用openmp+clang-omp++配合编译器优化O3
 
-**cpu time: 55.579s ---> 12.590s **
+**cpu time: 55.579s ---> 12.590s**
 
 ```bash
 ➜  bin git:(master) ✗ time ./testsparse 
