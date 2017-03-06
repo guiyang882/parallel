@@ -1,9 +1,7 @@
 #include <iostream>
 #include <fstream>
-#include <string>
 #include <vector>
 #include <unistd.h>
-#include <ctime>
 #include "sparserepresentation.hpp"
 
 using namespace std;
@@ -20,8 +18,8 @@ bool readSingleDictFile(string filepath, vector<vector<double>> &dict) {
 			tmp.push_back(atof(token));
 			token = strtok(NULL, delims);
 		}
-		delete token; token = NULL;
-		dict.push_back(tmp);
+		delete token;
+        dict.push_back(tmp);
 	}
 	fin.close();
 	return true;

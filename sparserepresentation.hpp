@@ -10,7 +10,7 @@
 #ifdef _OPENMP
 
 #if defined(__clang__)
-#include <libiomp/omp.h>
+#include <omp.h>
 #elif defined(__GNUG__) || defined(__GNUC__)
 #include <omp.h>
 #endif
@@ -31,9 +31,9 @@ vector<DataType> operator*(vector<DataType> vec, DataType data) {
 		cerr << "operator*:eeror." << endl;
 		throw runtime_error("operator*:error");
 	}
-	vector<DataType> result;
+	vector<DataType> result(len, 0.0);
 	for(int i = 0; i < len; i++) {
-		result.push_back(vec[i] * data);
+		result[i] = (vec[i] * data);
 	}
 	return result;
 }
@@ -49,10 +49,10 @@ vector<DataType> operator-(vector<DataType> vec1, vector<DataType> vec2) {
 		cerr << "operator-:error." << endl;
 		throw runtime_error("operator-:error");
 	}
-	vector<DataType> result;
 	int len = vec1.size();
+	vector<DataType> result(len, 0.0);
 	for (int i = 0; i < len; i++) {
-		result.push_back(vec1[i] - vec2[i]);
+		result[i] = (vec1[i] - vec2[i]);
 	}
 
 	return result;
@@ -69,10 +69,10 @@ vector<DataType> operator+(vector<DataType> vec1, vector<DataType> vec2) {
 		cerr << "operator+:error." << endl;
 		throw runtime_error("operator+:error");
 	}
-	vector<DataType> result;
 	int len = vec1.size();
+	vector<DataType> result(len, 0.0);
 	for(int i = 0; i < len; i++) {
-		result.push_back(vec1[i] + vec2[i]);
+		result[i] = (vec1[i] + vec2[i]);
 	}
 
 	return result;
@@ -96,14 +96,14 @@ vector<DataType> operator*(vector<vector<DataType>> mat, vector<DataType> vec) {
 		throw runtime_error("operator*:error");
 	}
 
-	vector<DataType> result;
+	vector<DataType> result(col, 0.0);
 	DataType tmp;
 	for(int i = 0; i < col; i++) {
 		tmp = 0.0;
 		for(int j = 0; j < row; j++) {
 			tmp += mat[j][i] * vec[j];
 		}
-		result.push_back(tmp);
+		result[i] = (tmp);
 	}
 	return result;
 }
@@ -189,8 +189,8 @@ int LSparseRepresentation<DataType>::SRClassify(vector<DataType>& y, DataType mi
 		x[patch_indices[i]] = coefficient[i];
 	}
 
-	vector<int>().swap(patch_indices);
-	vector<DataType>().swap(coefficient);
+	// vector<int>().swap(patch_indices);
+	// vector<DataType>().swap(coefficient);
 	
 	int result = 0;//分类结果 属于字典对应的类
 
@@ -205,7 +205,7 @@ int LSparseRepresentation<DataType>::SRClassify(vector<DataType>& y, DataType mi
 		}
 		DataType dist = Norm(y - tmp);
 
-		vector<DataType>().swap(tmp);
+		// vector<DataType>().swap(tmp);
 
 		if (mindist > dist) {
 			mindist = dist;
@@ -214,7 +214,7 @@ int LSparseRepresentation<DataType>::SRClassify(vector<DataType>& y, DataType mi
 
 		start += dicclassnum[i];
 	}
-	vector<DataType>().swap(x);
+	// vector<DataType>().swap(x);
 
 	return result; //result（0，1，2，3，...）
 
@@ -250,12 +250,12 @@ bool LSparseRepresentation<DataType>::SRClassify(vector<vector<DataType>>& y,
 	}
 
 	srres.resize(this->classnum);
-	for(i = 0; i < this->classnum; ++i){
+	for(i = 0; i < this->classnum; ++i) {
 		srres[i] = i;
 	}
 
-	for(i = this->classnum-1; i >= 0; --i){ //将识别后为0的类别删除
-		if(result[i] == 0){
+	for(i = this->classnum-1; i >= 0; --i) { //将识别后为0的类别删除
+		if(result[i] == 0) {
 			result.erase(result.begin() + i);
 			srres.erase(srres.begin() + i);
 		}
@@ -263,20 +263,15 @@ bool LSparseRepresentation<DataType>::SRClassify(vector<vector<DataType>>& y,
 
 	int resnum = result.size(); //识别结果个数
 	//对目标进行排序(递减)
-	for(i = 0; i < resnum - 1; ++i){
+	for(i = 0; i < resnum - 1; ++i) {
 		int index = i;
 		for(j = i + 1; j < resnum; ++j){
 			if(result[index] < result[j]){
 				index = j;
 			}
 		}
-		int tmp = result[index];
-		result[index] = result[i];
-		result[i] = tmp;
-
-		tmp = srres[index];
-		srres[index] = srres[i];
-		srres[i] = tmp;
+		swap(result[index], result[i]);
+		swap(srres[index], srres[i]);
 	}
 	return true;
 }
@@ -300,15 +295,13 @@ DataType LSparseRepresentation<DataType>::Dot(vector<DataType>& vec1, vector<Dat
 	*vec2				数组（N）
 	*return：DataType
 	*/
-	if (!vec1.size() || !vec2.size() || vec1.size() != vec2.size()){
+	if(!vec1.size() || !vec2.size() || vec1.size() != vec2.size()){
 		cerr << "Dot:error." << endl;
 		throw runtime_error("Dot:error");
 	}
 	DataType sum = 0;
-	int i;
 	int len = vec1.size();
-	for (i = 0; i < len; ++i)
-	{
+	for(int i = 0; i < len; ++i) {
 		sum += vec1[i] * vec2[i];
 	}
 
