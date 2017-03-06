@@ -17,7 +17,7 @@ string
 -
 Eigen/Dense
 /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/Eigen/Dense
-libiomp/omp.h
+omp.h
 -
 omp.h
 -
@@ -27,13 +27,9 @@ iostream
 -
 fstream
 -
-string
--
 vector
 -
 unistd.h
--
-ctime
 -
 sparserepresentation.hpp
 /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/sparserepresentation.hpp
@@ -1079,4 +1075,8 @@ lapacke_mangling.h
 /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 
 /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+
+/usr/local/include/libiomp/omp.h
+stdlib.h
+-
 

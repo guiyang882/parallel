@@ -3,7 +3,7 @@ project(testsparse)
 
 IF(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -fopenmp")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -fopenmp -O3")
 #    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -fprofile-arcs -ftest-coverage -g -pg")
 ENDIF(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 
@@ -14,6 +14,7 @@ IF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
 ENDIF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
 
 set(CMAKE_CXX_COMPILER /usr/local/bin/clang-omp++)
+# set(CMAKE_CXX_COMPILER /usr/local/bin/g++-6)
 
 find_package(Eigen 3 QUIET)
 if(NOT Eigen_FOUND)

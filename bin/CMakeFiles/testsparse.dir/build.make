@@ -60,15 +60,15 @@ include CMakeFiles/testsparse.dir/flags.make
 CMakeFiles/testsparse.dir/test.cpp.o: CMakeFiles/testsparse.dir/flags.make
 CMakeFiles/testsparse.dir/test.cpp.o: ../test.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testsparse.dir/test.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testsparse.dir/test.cpp.o -c /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/test.cpp
+	/usr/local/bin/clang-omp++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testsparse.dir/test.cpp.o -c /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/test.cpp
 
 CMakeFiles/testsparse.dir/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testsparse.dir/test.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/test.cpp > CMakeFiles/testsparse.dir/test.cpp.i
+	/usr/local/bin/clang-omp++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/test.cpp > CMakeFiles/testsparse.dir/test.cpp.i
 
 CMakeFiles/testsparse.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testsparse.dir/test.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/test.cpp -o CMakeFiles/testsparse.dir/test.cpp.s
+	/usr/local/bin/clang-omp++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/test.cpp -o CMakeFiles/testsparse.dir/test.cpp.s
 
 CMakeFiles/testsparse.dir/test.cpp.o.requires:
 
