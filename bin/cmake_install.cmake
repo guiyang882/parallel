@@ -1,4 +1,4 @@
-# Install script for directory: /Users/liuguiyang/Documents/CodeProj/ConsoleProj/acmcoder
+# Install script for directory: /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/liuguiyang/Documents/CodeProj/ConsoleProj/acmcoder/bin/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/bin/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

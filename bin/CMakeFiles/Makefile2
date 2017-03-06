@@ -54,10 +54,10 @@ RM = /usr/local/Cellar/cmake/3.7.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/liuguiyang/Documents/CodeProj/ConsoleProj/acmcoder
+CMAKE_SOURCE_DIR = /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/liuguiyang/Documents/CodeProj/ConsoleProj/acmcoder/bin
+CMAKE_BINARY_DIR = /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/bin
 
 #=============================================================================
 # Target rules for target CMakeFiles/testsparse.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /Users/liuguiyang/Documents/CodeProj/ConsoleProj/acmcoder/bin
 CMakeFiles/testsparse.dir/all:
 	$(MAKE) -f CMakeFiles/testsparse.dir/build.make CMakeFiles/testsparse.dir/depend
 	$(MAKE) -f CMakeFiles/testsparse.dir/build.make CMakeFiles/testsparse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liuguiyang/Documents/CodeProj/ConsoleProj/acmcoder/bin/CMakeFiles --progress-num=1,2 "Built target testsparse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/bin/CMakeFiles --progress-num=1,2 "Built target testsparse"
 .PHONY : CMakeFiles/testsparse.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/testsparse.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testsparse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liuguiyang/Documents/CodeProj/ConsoleProj/acmcoder/bin/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/bin/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testsparse.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liuguiyang/Documents/CodeProj/ConsoleProj/acmcoder/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallelomp/bin/CMakeFiles 0
 .PHONY : CMakeFiles/testsparse.dir/rule
 
 # Convenience name for target.
