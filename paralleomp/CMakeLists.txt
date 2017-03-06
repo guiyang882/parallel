@@ -28,7 +28,7 @@ link_directories(/usr/local/lib)
 ADD_DEFINITIONS(-D_OPENMP)
 
 set(SOURCE_FILES
-        sparserepresentation.hpp
+        sparserepresentationNoneTemplate.hpp
         test.cpp)
 
 add_executable(testsparse ${SOURCE_FILES})
