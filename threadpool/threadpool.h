@@ -14,12 +14,7 @@
 
 #include "mutex.h"
 #include "task.h"
-
-#include "../utils/log.h"
-#include "../utils/utils.h"
-
-#include "../utils/json/json.h"
-#include "../utils/json/json-forwards.h"
+#include "utils/log.h"
 
 /*
  * This thread pool not manage the memory delete and free
@@ -31,7 +26,6 @@ const int STARTED = 0;
 const int STOPPED = 1;
 
 using namespace std;
-using namespace Json;
 
 class ThreadPool {
 public:

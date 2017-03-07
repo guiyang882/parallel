@@ -10,8 +10,7 @@
 
 using namespace std;
 
-class Mutex
-{
+class Mutex {
 public:
     Mutex();
     ~Mutex();
@@ -26,13 +25,12 @@ private:
 
 class CondVar {
 public:
-
-  CondVar();
-  ~CondVar();
-  void wait(pthread_mutex_t* mutex);
-  void signal();
-  void broadcast();
+    CondVar();
+    ~CondVar();
+    void wait(pthread_mutex_t* mutex);
+    void signal();
+    void broadcast();
 
 private:
-  pthread_cond_t m_cond_var;
+    pthread_cond_t m_cond_var;
 };

@@ -9,7 +9,7 @@
 #include <string.h>
 #include <string>
 
-#include "../utils/utils.h"
+#include "utils/utils.h"
 
 using namespace std;
 
