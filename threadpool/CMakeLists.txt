@@ -13,11 +13,14 @@ ENDIF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
 # set(CMAKE_CXX_COMPILER /usr/local/bin/g++-6)
 
 include_directories(/usr/local/include/libiomp)
+include_directories(/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart)
 link_directories(/usr/local/lib)
 
+set(thirdpath /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart)
+
 set(SOURCE_FILES
-		utils/log.h
-		utils/log.cpp
+        ${thirdpath}/log/log.h
+        ${thirdpath}/log/log.cpp
         utils/utils.h
         mutex.h
         mutex.cpp

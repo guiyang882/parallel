@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/testpool.dir/utils/log.cpp.o"
+  "CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o"
   "CMakeFiles/testpool.dir/mutex.cpp.o"
   "CMakeFiles/testpool.dir/task.cpp.o"
   "CMakeFiles/testpool.dir/threadpool.cpp.o"

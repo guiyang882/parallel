@@ -1,0 +1,4 @@
+[20:34:52 03/15/17] INFO  - LOG INITIALISED
+[20:34:52 03/15/17] INFO  - ~ ThreadPool and Still Running !
+[20:34:52 03/15/17] INFO  - Broadcasting STOP signal to all threads...
+[20:34:52 03/15/17] INFO  - LOG FINALISED

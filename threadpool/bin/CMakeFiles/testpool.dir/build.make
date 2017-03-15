@@ -57,28 +57,28 @@ include CMakeFiles/testpool.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/testpool.dir/flags.make
 
-CMakeFiles/testpool.dir/utils/log.cpp.o: CMakeFiles/testpool.dir/flags.make
-CMakeFiles/testpool.dir/utils/log.cpp.o: ../utils/log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/threadpool/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testpool.dir/utils/log.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testpool.dir/utils/log.cpp.o -c /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/threadpool/utils/log.cpp
+CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o: CMakeFiles/testpool.dir/flags.make
+CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o: /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/threadpool/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o -c /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp
 
-CMakeFiles/testpool.dir/utils/log.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testpool.dir/utils/log.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/threadpool/utils/log.cpp > CMakeFiles/testpool.dir/utils/log.cpp.i
+CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp > CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.i
 
-CMakeFiles/testpool.dir/utils/log.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testpool.dir/utils/log.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/threadpool/utils/log.cpp -o CMakeFiles/testpool.dir/utils/log.cpp.s
+CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp -o CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.s
 
-CMakeFiles/testpool.dir/utils/log.cpp.o.requires:
+CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o.requires:
 
-.PHONY : CMakeFiles/testpool.dir/utils/log.cpp.o.requires
+.PHONY : CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o.requires
 
-CMakeFiles/testpool.dir/utils/log.cpp.o.provides: CMakeFiles/testpool.dir/utils/log.cpp.o.requires
-	$(MAKE) -f CMakeFiles/testpool.dir/build.make CMakeFiles/testpool.dir/utils/log.cpp.o.provides.build
-.PHONY : CMakeFiles/testpool.dir/utils/log.cpp.o.provides
+CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o.provides: CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o.requires
+	$(MAKE) -f CMakeFiles/testpool.dir/build.make CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o.provides.build
+.PHONY : CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o.provides
 
-CMakeFiles/testpool.dir/utils/log.cpp.o.provides.build: CMakeFiles/testpool.dir/utils/log.cpp.o
+CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o.provides.build: CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o
 
 
 CMakeFiles/testpool.dir/mutex.cpp.o: CMakeFiles/testpool.dir/flags.make
@@ -179,7 +179,7 @@ CMakeFiles/testpool.dir/demo.cpp.o.provides.build: CMakeFiles/testpool.dir/demo.
 
 # Object files for target testpool
 testpool_OBJECTS = \
-"CMakeFiles/testpool.dir/utils/log.cpp.o" \
+"CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o" \
 "CMakeFiles/testpool.dir/mutex.cpp.o" \
 "CMakeFiles/testpool.dir/task.cpp.o" \
 "CMakeFiles/testpool.dir/threadpool.cpp.o" \
@@ -188,7 +188,7 @@ testpool_OBJECTS = \
 # External object files for target testpool
 testpool_EXTERNAL_OBJECTS =
 
-testpool: CMakeFiles/testpool.dir/utils/log.cpp.o
+testpool: CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o
 testpool: CMakeFiles/testpool.dir/mutex.cpp.o
 testpool: CMakeFiles/testpool.dir/task.cpp.o
 testpool: CMakeFiles/testpool.dir/threadpool.cpp.o
@@ -203,7 +203,7 @@ CMakeFiles/testpool.dir/build: testpool
 
 .PHONY : CMakeFiles/testpool.dir/build
 
-CMakeFiles/testpool.dir/requires: CMakeFiles/testpool.dir/utils/log.cpp.o.requires
+CMakeFiles/testpool.dir/requires: CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o.requires
 CMakeFiles/testpool.dir/requires: CMakeFiles/testpool.dir/mutex.cpp.o.requires
 CMakeFiles/testpool.dir/requires: CMakeFiles/testpool.dir/task.cpp.o.requires
 CMakeFiles/testpool.dir/requires: CMakeFiles/testpool.dir/threadpool.cpp.o.requires

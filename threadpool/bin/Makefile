@@ -123,6 +123,33 @@ testpool/fast:
 	$(MAKE) -f CMakeFiles/testpool.dir/build.make CMakeFiles/testpool.dir/build
 .PHONY : testpool/fast
 
+Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.o: Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o
+
+.PHONY : Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.o
+
+# target to build an object file
+Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o:
+	$(MAKE) -f CMakeFiles/testpool.dir/build.make CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o
+.PHONY : Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.o
+
+Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.i: Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.i
+
+.PHONY : Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.i
+
+# target to preprocess a source file
+Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.i:
+	$(MAKE) -f CMakeFiles/testpool.dir/build.make CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.i
+.PHONY : Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.i
+
+Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.s: Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.s
+
+.PHONY : Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.s
+
+# target to generate assembly for a file
+Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.s:
+	$(MAKE) -f CMakeFiles/testpool.dir/build.make CMakeFiles/testpool.dir/Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.s
+.PHONY : Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.cpp.s
+
 demo.o: demo.cpp.o
 
 .PHONY : demo.o
@@ -231,33 +258,6 @@ threadpool.cpp.s:
 	$(MAKE) -f CMakeFiles/testpool.dir/build.make CMakeFiles/testpool.dir/threadpool.cpp.s
 .PHONY : threadpool.cpp.s
 
-utils/log.o: utils/log.cpp.o
-
-.PHONY : utils/log.o
-
-# target to build an object file
-utils/log.cpp.o:
-	$(MAKE) -f CMakeFiles/testpool.dir/build.make CMakeFiles/testpool.dir/utils/log.cpp.o
-.PHONY : utils/log.cpp.o
-
-utils/log.i: utils/log.cpp.i
-
-.PHONY : utils/log.i
-
-# target to preprocess a source file
-utils/log.cpp.i:
-	$(MAKE) -f CMakeFiles/testpool.dir/build.make CMakeFiles/testpool.dir/utils/log.cpp.i
-.PHONY : utils/log.cpp.i
-
-utils/log.s: utils/log.cpp.s
-
-.PHONY : utils/log.s
-
-# target to generate assembly for a file
-utils/log.cpp.s:
-	$(MAKE) -f CMakeFiles/testpool.dir/build.make CMakeFiles/testpool.dir/utils/log.cpp.s
-.PHONY : utils/log.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -267,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... testpool"
+	@echo "... Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.o"
+	@echo "... Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.i"
+	@echo "... Users/liuguiyang/Documents/CodeProj/ConsoleProj/parallel/thirdpart/log/log.s"
 	@echo "... demo.o"
 	@echo "... demo.i"
 	@echo "... demo.s"
@@ -279,9 +282,6 @@ help:
 	@echo "... threadpool.o"
 	@echo "... threadpool.i"
 	@echo "... threadpool.s"
-	@echo "... utils/log.o"
-	@echo "... utils/log.i"
-	@echo "... utils/log.s"
 .PHONY : help
 
 
