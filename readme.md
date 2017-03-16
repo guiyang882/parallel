@@ -6,6 +6,7 @@
 
 ### 生产者消费者模型
 
+- C语言版本
 ```c++
 thread 1:
     pthread_mutex_lock(&mutex);
@@ -19,4 +20,9 @@ thread2:
     /* do something that might make condition true */
     pthread_cond_signal(&cond);
     pthread_mutex_unlock(&mutex);
+```
+
+- C++语言版本
+```c++
+
 ```
